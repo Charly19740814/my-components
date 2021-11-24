@@ -1,0 +1,1 @@
+a Media Object nem más mint egy olyan elem, aminek a bal oldalán egy kép van, a jobb oldalán pedig valamilyen szöveg.
