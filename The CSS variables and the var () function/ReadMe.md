@@ -1,0 +1,1 @@
+a CSS-változókat (CSS variables). Elég egyszer megadnod az értéket (például az oldal fő színét), majd mindenhol hivatkozhatsz rá a változón keresztül. Meg kell változtatnod az értéket? Semmi probléma, elég átírnod a változóban, és varázsütésre mindenhol megjelenik az új érték.
