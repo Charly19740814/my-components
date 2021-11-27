@@ -1,3 +1,18 @@
+/**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Elements.............Rules for the container and items
+ * Modifiers............Media queries for the layout.
+ *
+ * WHITESPACES
+ * Whitespaces..........Whitespaces between items.
+ */
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
 .main-head {
   grid-area: header;
   place-self: center strech;
@@ -9,7 +24,7 @@
 
 .content {
   grid-area: content;
-}
+} 
 
 .side {
   grid-area: sidebar;
@@ -26,23 +41,27 @@
 
 .page {
   display: grid;
-  grid-template-areas: 
-  "header"
-  "nav"
-  "content"
-  "sidebar"
-  "ad"
-  "footer"
+  grid-template-areas:
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer"
 }
+
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
 
 @media (min-width: 500px) {
   .page {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
-    "header   header"
-    "nav      nav"
-    "sidebar  content"
-    "ad       footer"
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
   }
 }
 
@@ -50,12 +69,16 @@
   .page {
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: 
-    "header   header   header"
-    "nav      content  sidebar"
-    "nav      content  ad"
-    "footer   footer   footer"
+      "header header  header"
+      "nav    content sidebar"
+      "nav    content ad"
+      "footer footer  footer"
   }
 }
+
+/*------------------------------------*\
+  #WHITESPACES
+\*------------------------------------*/
 
 .page {
   gap: .7em;
@@ -72,6 +95,3 @@
     gap: 2.3em;
   }
 }
-
-
-
